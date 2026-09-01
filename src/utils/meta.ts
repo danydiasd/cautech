@@ -1,0 +1,2 @@
+import {useEffect} from 'react';
+export function useMeta(title:string,description:string){useEffect(()=>{document.title=`${title} | CAU TECH`;document.querySelector('meta[name="description"]')?.setAttribute('content',description);document.querySelector('meta[property="og:title"]')?.setAttribute('content',`${title} | CAU TECH`);document.querySelector('meta[property="og:description"]')?.setAttribute('content',description)},[title,description])}

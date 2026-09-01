@@ -1,0 +1,3 @@
+import {Link} from 'react-router-dom';
+export function PageHero({eyebrow,title,children}:{eyebrow:string;title:string;children:React.ReactNode}){return <section className="page-hero"><div className="container narrow"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{children}</p></div></section>}
+export function CTA(){return <section className="cta"><div className="container cta__inner"><div><span className="eyebrow">Próximo passo</span><h2>Seu desafio pode ser o começo de uma boa solução.</h2><p>Conte o contexto. Nós ajudamos a transformar a necessidade em um caminho digital possível.</p></div><Link className="button" to="/contato">Conte seu projeto <span aria-hidden="true">→</span></Link></div></section>}
